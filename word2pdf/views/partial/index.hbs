@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File upload</title>
+</head>
+
+<body>
+    <form clss="fileupload" action="upload" method="POST" enctype="multipart/form-data">
+        <h1>Upload file here</h1>
+        <input type="file" name="upfile" value="">
+        <input type="submit">
+
+        <a href={{pathToPdf}}>
+            <button>Download pdf</button>
+        </a>
+
+    </form>
+</body>
+
+</html>
