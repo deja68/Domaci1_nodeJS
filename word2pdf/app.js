@@ -6,7 +6,7 @@ const docxConverter = require("docx-pdf");
 const app = express();
 
 app.use(upload());
-
+app.use(express.static(".")); //allows us to include styles.css
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/index.html");
 });
